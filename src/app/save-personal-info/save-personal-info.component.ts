@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./save-personal-info.component.css']
 })
 export class SavePersonalInfoComponent implements OnInit {
-  ngOnInit() { } name!: string
+  ngOnInit() {
+    this.getinfo()
+  }
+  name!: string
   sexe!: any
   activite!: string
   poids!: number
@@ -18,6 +21,10 @@ export class SavePersonalInfoComponent implements OnInit {
         this.activite, poids: this.poids,
       datenais: this.datenais
     }
+    console.log(user);
+    console.log("info enregitrer");
+
+
     localStorage.setItem('user', JSON.stringify(user))
   }
 
