@@ -1,0 +1,67 @@
+<nav>
+  <div class="span bluecol app-name">FoodLog</div>
+  <div class="span"><img src="../assets/vert.png"></div>
+</nav>
+<div class="center bluecol pagetitle">SaveInfo</div>
+<form action="" method="post">
+  <div class="ligne">
+    <label for="Name" class="blaked">Name</label> <br>
+    <div class="input-group flex-nowrap">
+      <span class="input-group-text" id="addon-wrapping">@</span>
+      <input type="text" [(ngModel)]="name" class="form-control" placeholder="Username" aria-label="Username"
+        aria-describedby="addon-wrapping">
+    </div>
+  </div>
+  <div class="ligne">
+    <label for="Name" class="blaked">dateNais</label> <br>
+    <div class="input-group flex-nowrap">
+      <span class="input-group-text" id="addon-wrapping">@</span>
+      <input type="text" class="form-control" name="datenais" [(ngModel)]="datenais" placeholder="datenais" aria-label="Username"
+        aria-describedby="addon-wrapping">
+    </div>
+  </div>
+  <div class="ligne">
+    <label for="Name" class="blaked">poids</label> <br>
+    <div class="input-group flex-nowrap">
+      <span class="input-group-text" id="addon-wrapping">@</span>
+      <input type="text" class="form-control" placeholder="poids" name="poids" [(ngModel)]="poids" aria-label="Username"
+        aria-describedby="addon-wrapping">
+    </div>
+  </div>
+  <div class="ligne">
+    <label for="Name" class="blaked">profession</label> <br>
+    <div class="input-group flex-nowrap">
+      <span class="input-group-text" id="addon-wrapping">@</span>
+      <input type="text" class="form-control" placeholder="Username" aria-label="Profession"
+        aria-describedby="addon-wrapping">
+    </div>
+  </div>
+  <div class="ligne">
+    <label for="Name" class="blaked">Activite</label> <br>
+    <select class="form-select" aria-label="Default select example" [(ngModel)]="activite">
+      <option selected>Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+  <div class="ligne">
+    <label for="Name" class="blaked">Sexe</label> <br>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="sexe" [(ngModel)]="sexe" id="flexRadioDefault1">
+      <label class="form-check-label blaked" for="flexRadioDefault1">
+        M
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="sexe" [(ngModel)]="sexe" id="flexRadioDefault2">
+      <label class="form-check-label blaked" for="flexRadioDefault2">
+        F
+      </label>
+    </div>
+  </div>
+  <div class="d-grid gap-2 col-6 mx-auto">
+    <button class="btn btn-primary" type="button">Save</button>
+  </div>
+
+</form>
