@@ -1,1 +1,29 @@
-<p>calculatebmi works!</p>
+<nav>
+  <div class="span bluecol app-name">FoodLog</div>
+  <div class="span"><img src="../assets/vert.png"></div>
+</nav>
+<div class="center bluecol pagetitle">Calculate</div>
+
+<label for="Name" class="blaked">IMC : {{ imc }}</label> <br>
+<form action="" method="post">
+  <div class="ligne">
+    <label for="Name" class="blaked">poids</label> <br>
+    <div class="input-group flex-nowrap">
+      <span class="input-group-text" id="addon-wrapping">@</span>
+      <input type="number" class="form-control" placeholder="poids" aria-label="nom repas" name="poids"
+        [(ngModel)]="poids" aria-describedby="addon-wrapping">
+    </div>
+  </div>
+  <div class="ligne">
+    <label for="Name" class="blaked">taille</label> <br>
+    <div class="input-group flex-nowrap">
+      <span class="input-group-text" id="addon-wrapping">@</span>
+      <input type="number" class="form-control" placeholder="taille" aria-label="%proteine" name="taille"
+        [(ngModel)]="taille" aria-describedby="addon-wrapping">
+    </div>
+  </div>
+  <div class="d-grid gap-2 col-6 mx-auto">
+    <button class="btn btn-primary" type="button" (click)="calculate()">calculate</button>
+  </div>
+
+</form>

@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./calculatebmi.component.css']
 })
 export class CalculatebmiComponent {
-
+  poids!:number
+  taille!:number
+  imc!:number
+  calculate(){
+    this.imc = (this.poids * this.taille)
+  }
 }

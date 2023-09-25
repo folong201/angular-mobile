@@ -9,36 +9,21 @@
     <label for="Name" class="blaked">Name</label> <br>
     <div class="input-group flex-nowrap">
       <span class="input-group-text" id="addon-wrapping">@</span>
-      <input type="text" class="form-control" placeholder="Taux proteine" aria-label="nom repas"
+      <input type="text" class="form-control" placeholder="Taux proteine" aria-label="nom repas" name="name" [(ngModel)]="food.name"
         aria-describedby="addon-wrapping">
     </div>
   </div>
   <div class="ligne">
-    <label for="Name" class="blaked">taux proteine</label> <br>
+    <label for="Name" class="blaked">calorie</label> <br>
     <div class="input-group flex-nowrap">
       <span class="input-group-text" id="addon-wrapping">@</span>
-      <input type="text" class="form-control" placeholder="Taux proteine" aria-label="%proteine"
-        aria-describedby="addon-wrapping">
-    </div>
-  </div>
-  <div class="ligne">
-    <label for="Name" class="blaked">Taux sucre</label> <br>
-    <div class="input-group flex-nowrap">
-      <span class="input-group-text" id="addon-wrapping">@</span>
-      <input type="text" class="form-control" placeholder="% sucre" aria-label="% sucre"
-        aria-describedby="addon-wrapping">
-    </div>
-  </div>
-  <div class="ligne">
-    <label for="Name" class="blaked">taux fibre</label> <br>
-    <div class="input-group flex-nowrap">
-      <span class="input-group-text" id="addon-wrapping">@</span>
-      <input type="text" class="form-control" placeholder="taux fibre" aria-label="Username"
+      <input type="number" class="form-control" placeholder="Taux proteine" aria-label="%proteine" name="calorie" [(ngModel)]="food.calorie"
         aria-describedby="addon-wrapping">
     </div>
   </div>
   <div class="d-grid gap-2 col-6 mx-auto">
-    <button class="btn btn-primary" type="button">Save</button>
+    <button class="btn btn-primary" type="button" (click)="savefood()">Save</button>
+    <button class="btn btn-danger" type="button" (click)="deleteAllFood()">Reset</button>
   </div>
 
 </form>

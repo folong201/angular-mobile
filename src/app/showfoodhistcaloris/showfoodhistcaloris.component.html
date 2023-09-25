@@ -1,1 +1,15 @@
-<p>showfoodhistcaloris works!</p>
+<nav>
+  <div class="span bluecol app-name">FoodLog</div>
+  <div class="span"><img src="../assets/vert.png"></div>
+</nav>
+<div class="center bluecol pagetitle">Histo</div>
+<div class="container">
+  <canvas id="myChart"></canvas>
+</div>
+
+<div class="container">
+  <p *ngFor="let food of foodList" class="blaked">
+    name : {{ food.name }} <br>
+    Calories : {{ food.calorie }} kl
+  </p>
+</div>

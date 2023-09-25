@@ -14,9 +14,11 @@ export class SavePersonalInfoComponent implements OnInit {
   activite!: string
   poids!: number
   datenais!: string
+  profession!: string
   saveInfo() {
     var user = {
       name: this.name,
+      profession: this.profession,
       sexe: this.sexe, activite:
         this.activite, poids: this.poids,
       datenais: this.datenais
@@ -34,6 +36,7 @@ export class SavePersonalInfoComponent implements OnInit {
     this.sexe = user.sexe
     this.activite = user.activite
     this.poids = user.poids
-    this.datenais = user.datenais
+    this.datenais = user.datenais,
+      this.profession = user.profession
   }
 }
